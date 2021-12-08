@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <div id = "navbar">
+        <div id = "brand">
+            <img src="https://www.pngitem.com/pimgs/m/553-5536316_pen-and-paper-icon-transparent-png-download-circle.png" alt="">
+            <h1>Blog.com</h1>
+        </div>
+        <div id = "nav-links">
+        <a href="/"><img src="https://www.nicepng.com/png/full/115-1153942_white-home-icon-png-white-home-logo-transparent.png" alt=""></a>
+        </div>
+    </div>
+  {% block content %}
+  {% endblock %}  
+</body>
+</html>
