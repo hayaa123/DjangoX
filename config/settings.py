@@ -33,6 +33,8 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
+    'blog'
+    
 ]
 
 # MIDDLEWARE
@@ -171,3 +173,8 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+import os
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+

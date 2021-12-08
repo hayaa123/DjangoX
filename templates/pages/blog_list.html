@@ -1,0 +1,28 @@
+{% extends '_blog_base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div id="intro">
+    <h1>
+        Your Blogs
+    </h1>
+    <p>
+        here you can save all your good memries :D 
+    </p>
+    <a href="/create"> add Post </a>
+</div>
+<div id="list-grid">
+{% for blog in object_list %}
+<a href="{{blog.id}}">
+    <div id='blog-card'>
+        <h1>{{blog.title}}</h1>
+    
+        <img src="{{blog.image.url}}" alt="{{blog.image}}">
+        <!-- <p>{{blog.description}}</p> -->
+    </div>
+</a>
+{% endfor %}
+</div>
+
+{% endblock %}

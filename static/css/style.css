@@ -1,0 +1,158 @@
+body {
+  background-color: whitesmoke;
+}
+#navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #225D6E;
+}
+
+#brand {
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+  color: whitesmoke;
+}
+
+#brand img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+#nav-links {
+  display: flex;
+  width: 100px;
+}
+
+#nav-links img {
+  width: 70px;
+}
+
+#list-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* margin: auto; */
+    width: 90%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+#list-grid a {
+    text-decoration: none;
+}
+#blog-card img{
+    width: 100%;
+    object-fit: cover;
+    height: 30%;
+}
+#blog-card h1{
+    margin: 0px;
+    padding: 5% 0px;
+    color: #225D6E;
+}
+
+#blog-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    width: 90%;
+    margin-top: 50px;
+}
+#blog-card:hover{
+    width: 93%;
+    height: 93%;
+}
+#intro{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 3%;
+}
+#intro a{
+    text-decoration: none;
+    background-color: #1da28f;
+    padding: 20px 10px;
+    color: whitesmoke;
+    margin: 10px;
+    display: block;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#intro h1{
+    color: #225D6E;
+}
+
+#create_form,#update{
+    width: 70%;
+    margin: auto;
+}
+
+
+label{
+    display: block;
+    padding-bottom: 10px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom:1px solid #1da28f;
+}
+#create_form h1{
+    color: #225D6E;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    /* background-color: #f8f8f8; */
+    resize: none;
+  }
+
+input[type=submit]{
+    width: 20%;
+    height: 50px;
+    background-color: #1da28f;
+    border: none;
+    color : whitesmoke;
+    font-size: 20px;
+    transition: 500ms;
+}
+input[type=submit]:hover {
+    background-color: 1da28f;
+
+}
+#detail{
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+}
+#detail h1 ,#update h1{
+    color: #225D6E;
+}
+#detail img{
+    width: 70%;
+    height: 30%;
+    object-fit: cover;
+}
+
+#detail a {
+    text-decoration: none;
+    background-color: #1da28f;
+    padding: 10px 20px;
+    color: whitesmoke;
+    margin: 10px;
+    /* display: block; */
+    width: 200px;
+    
+    border-radius: 10px;
+    font-size: 20px;  
+}
